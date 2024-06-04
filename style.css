@@ -1,0 +1,252 @@
+/*////////////////////////////////////////////////////////////
+//////////////////// WINDOW & HTML ELEMENTS
+////////////////////////////////////////////////////////////*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input[type='radio'] {
+    accent-color: blue;
+    vertical-align: baseline;
+    border: 0px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#demo-plan {
+  height: 100%;
+}
+
+/*////////////////////////////////////////////////////////////
+//////////////////// ARCHILOGIC UI
+////////////////////////////////////////////////////////////*/
+
+.fpe-menu-bar__icon--measure {
+  display: none;
+}
+
+.fpe-menu-bar {
+  position: absolute;
+  left: auto;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1001;
+}
+
+/*////////////////////////////////////////////////////////////
+//////////////////// IAQ HTML MARKERS
+////////////////////////////////////////////////////////////*/
+
+.iaq-marker-green {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: lightgreen;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 7px 10px 5px 7px;
+  z-index: 0;
+}
+
+.iaq-marker-yellow {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: gold;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 7px 10px 5px 7px;
+  z-index: 0;
+}
+
+.iaq-marker-orange {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: #ff7e02;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 7px 10px 5px 4px;
+  z-index: 0;
+}
+
+.iaq-marker-green:hover, .iaq-marker-yellow:hover, .iaq-marker-orange:hover {
+  cursor: default;
+}
+
+/*////////////////////////////////////////////////////////////
+//////////////////// HUMIDITY HTML MARKERS
+////////////////////////////////////////////////////////////*/
+
+.humidity-marker-green {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 2.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: lightgreen;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 7px 6px;
+  z-index: 0;
+}
+
+.humidity-marker-yellow {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 2.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: gold;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 7px 6px;
+  z-index: 0;
+}
+
+.humidity-marker-orange {
+  border-radius: 50%;
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 2.2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: #ff7e02;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 7px 6px;
+  z-index: 0;
+}
+
+.humidity-marker-green:hover, .humidity-marker-yellow:hover, .humidity-marker-orange:hover {
+  cursor: default;
+}
+
+/*////////////////////////////////////////////////////////////
+//////////////////// TEMPERATURE HTML MARKERS
+////////////////////////////////////////////////////////////*/
+
+.temperature-marker-green {
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: lightgreen;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 6px 6px;
+  z-index: 0;
+}
+
+.temperature-marker-yellow {
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: gold;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 6px 6px;
+  z-index: 0;
+}
+
+.temperature-marker-orange {
+  background-size: 1.7rem;
+  height: 1.5rem;
+  width: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s;
+  background: #ff7e02;
+  font-size: .7rem;
+  font-weight: extrabold;
+  padding: 5px 10px 6px 6px;
+  z-index: 0;
+}
+
+.temperature-marker-green:hover, .temperature-marker-yellow:hover, .temperature-marker-orange:hover {
+  cursor: default;
+}
+
+/*////////////////////////////////////////////////////////////
+//////////////////// FILTERS
+////////////////////////////////////////////////////////////*/
+
+#filter-container {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#filter-content {
+  font-size: 1.2rem;
+  max-height: 300px;
+  width: 150px;
+  max-width: 175px;
+  overflow-y: scroll;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(15, 15, 15, 0.2);
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+  line-height: 1.5em;
+  background-color: white;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.radio-label {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1%;
+  transform: rotate(-180deg);
+}
+
+.radio-input {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.radio-input:hover, .radio-label:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 350px) {
+  #filter-content {
+    width: 140px;
+  }
+}

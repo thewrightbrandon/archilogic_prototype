@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<title>Archilogic Demo</title>
+		<script src='https://code.archilogic.com/fpe-sdk/v3.1.x/fpe.js'></script>
+		<script type='module' src='main.js' charset='utf-8'></script>
+		<link rel='icon' type='image/x-icon' href='/images/favicon.ico'>
+		<link rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<div id="filter-container">
+			<div id="filter-content">
+			  <div class="filter-item">
+			  	<label class='radio-label' for="map">Map</label>
+			  	<input type="radio" id="map" class='radio-input' name="filter" value="map">
+			  </div>
+			  <div class="filter-item">
+			  	<label class='radio-label' for="occupancy">Occupancy</label>
+			  	<input type="radio" id="occupancy" class='radio-input' name="filter" value="occupancy">
+			  </div>
+			  <div class="filter-item">
+			  	<label class='radio-label' for="IAQ">IAQ</label>
+			  	<input type="radio" id="IAQ" class='radio-input' name="filter" value="IAQ">
+			  </div>
+			  <div class="filter-item">
+			  	<label class='radio-label' for="humidity">Humidity</label>
+			  	<input type="radio" id="humidity" class='radio-input' name="filter" value="humidity">
+			  </div>
+			  <div class="filter-item">
+			  	<label class='radio-label' for="temperature">Temperature</label>
+			  	<input type="radio" id="temperature" class='radio-input' name="filter" value="temperature">
+			  </div>
+			</div>
+		</div>
+		<div id='demo-plan'></div>
+	</body>
+</html>
